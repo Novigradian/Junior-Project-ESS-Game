@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Outlineable
+  - GVM
   layers:
   - Default
   - TransparentFX

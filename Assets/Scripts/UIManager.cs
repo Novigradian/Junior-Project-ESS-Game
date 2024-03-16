@@ -20,10 +20,12 @@ public class UIManager : MonoBehaviour
 
     public TextMeshProUGUI[] tilesToPlaceTexts;
 
+    public GameObject VictoryPanel;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        VictoryPanel.SetActive(false);
     }
 
     // Update is called once per frame
