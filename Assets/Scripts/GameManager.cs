@@ -38,12 +38,12 @@ public class GameManager : MonoBehaviour
 
     public void ApplyTile(TileManager tm)
     {
-        if (CheckTilePlacementValidity())
+        if (CheckTilePlacementValidity() && tm.tileType==TileManager.TileType.Neutral)
         {
             UpdateTilesToPlace();
             tm.ChangeTileType(selectedTileType);
             Debug.Log("changed tile to: " + selectedTileType);
-            selectedTileType = TileManager.TileType.None;
+            //selectedTileType = TileManager.TileType.None;
         }
     }
 

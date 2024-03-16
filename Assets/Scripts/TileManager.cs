@@ -83,6 +83,11 @@ public class TileManager : MonoBehaviour
         {
             int p = 0;
             bool alreadyWaterPolluted = false;
+            
+            if (tileType == TileType.PollutedWater)
+            {
+                tileType = TileType.Water;
+            }
 
             foreach (TileManager tm in adjacentTiles)
             {
